@@ -1,0 +1,38 @@
+https://www.youtube.com/watch?v=u_uQd-ts2qA  유투브 시간순삭 파이썬
+https://data-make.tistory.com/96 블로그 정리
+파일 불러오는 거 같은 파일에 있으면 파일 이름만 적어도 됨! 다시 보기
+open(" " , 
+https://www.youtube.com/watch?v=7vmIX0WtD28&list=PLDFD6tlDzdRnB8DX3EHUMhLHah91IX-zI&index=97
+xlsx파일 csv로 변환
+https://convertio.co/kr/download/059d6a00724697fc1e2652fdf6c99e1532e986/
+파이참 단축키
+https://blog.naver.com/cardin9/222219634540
+모듈 사용법
+https://lchit.tistory.com/19
+https://m.blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=jinyuri303&logNo=221887231360&categoryNo=39&proxyReferer=
+
+키워드 인수 
+디폴트 인수 영상보기
+https://www.delftstack.com/ko/howto/python-tkinter/how-to-change-the-tkinter-button-size/ 버튼 크기
+https://wikidocs.net/2838 문자열 인덱싱 및 슬라이싱
+https://data-workspace.tistory.com/9
+https://www.delftstack.com/ko/howto/python-tkinter/how-to-set-font-of-tkinter-text-widget/ 글꼴 
+https://appia.tistory.com/209
+https://makerejoicegames.tistory.com/82 키입력
+https://www.delftstack.com/ko/howto/python/how-to-remove-last-character-from-string-in-python/ 슬라이싱 방법 및 포지티브 인덱싱으로 Python 문자열 마지막 3 자 제거
+https://itinformation.tistory.com/110 eval 함수
+https://opentutorials.org/module/2980/18008 계산기
+https://076923.github.io/posts/Python-tkinter-3/ 버튼
+
+
+
+ai hub 개방 데이터, 외부데이터 및 경진대회 
+ICT COC 세미나 진행 신청자격 ICT 콤플렉스 멤버 (홈페이지 지원)
+ai connect 대회 
+데이콘 경진대회 
+
+k_ict 빅데이터 센터  여러 데이터 및 교육자료 (빅콘테스트) 
+data.go.kr 공공데이터 포털
+
+연습문제 39   23
+Lab 55 220  54 12 55 
