@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- xml 도 마크업이다.    기계가 얘를 해석하기가 훨씬 수월 -->
+    <!-- <changefreq>daily</changefreq>
+    <priority>0.8</priority> -->
+    <!-- url 나열  -->
+<url>
+    <loc>http://opentutorials.org/1.html</loc>
+</url>
+<url>
+    <loc>http://opentutorials.org/2.html</loc>
+</url>
+<url>
+    <loc>http://opentutorials.org/3.html</loc>
+</url>
+
+ 
+</urlset>

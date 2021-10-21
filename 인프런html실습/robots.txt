@@ -1,0 +1,6 @@
+User-agent:*
+Sitemap:/sitemap.xml 
+만든 sitemap.xml  
+검색엔진이 사이트에 들어와서 robots.txt 보고 
+sitemap.xml 를 찾아가고 사이트에서 sitemap.xml 다운 
+그 이후 처리 작업 
