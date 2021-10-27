@@ -1,14 +1,26 @@
 /* Cascading Style Sheet */
 /* 선택자 (selector) */
 
+.blind{
+  position: absolute;
+  overflow: hidden;
+  clip:rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
 #header-center {
   margin : 0 auto; 
   width : 1080px;/*넓이 비율 1920 에서 1080 차이 */
 }
 
 #header-search > h1{ /* > headersearch 안에 있는 자식 h1선택 선택자  */
-  width : 280px;
+
+  width: 198px;
+  height: 48px;
   display: inline-block;
+  background-image: url(./spsh);
 }
 
 
@@ -18,7 +30,10 @@
 
 
 #header-search h2{
-  /**/
+  /*
+  시각장애인이 보는데도 보이지 않음 검색엔진은 알아차림 
+  css blind  속성 화면에서는 안보이지만 스크린 리더에서는 읽힘 
+   */
   display: none;
 
 
