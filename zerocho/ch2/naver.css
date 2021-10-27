@@ -1,0 +1,31 @@
+/* Cascading Style Sheet */
+/* 선택자 (selector) */
+
+#header-center {
+  margin : 0 auto; 
+  width : 1080px;/*넓이 비율 1920 에서 1080 차이 */
+}
+
+#header-search > h1{ /* > headersearch 안에 있는 자식 h1선택 선택자  */
+  width : 280px;
+  display: inline-block;
+}
+
+
+/* header-center h1{
+  자손 선택자  보통 자손택자 
+} */
+
+
+#header-search h2{
+  /**/
+  display: none;
+
+
+}
+
+#header-search fieldset{
+  width: 520px;
+  display: inline-block;
+
+}
