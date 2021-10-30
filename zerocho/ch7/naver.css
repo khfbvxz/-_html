@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6{
 .inline-block{
   display: inline-block;
 }
+.float-left{
+  float: left;
+}
 
 #fixed{
   position: fixed;
@@ -45,7 +48,9 @@ h1, h2, h3, h4, h5, h6{
 
 .center-align {
   margin : 0 auto; 
-  width : 1080px;/*넓이 비율 1920 에서 1080 차이 */
+  /* width : 1080px;넓이 비율 1920 에서 1080 차이  */
+  /* 변경 현재 네이버 1130  */
+  width : 1100px;
 }
 
 header{
@@ -176,17 +181,17 @@ nav ul{
   list-style: none;
 }
 
-nav li{
+#nav-menu li{
   display: inline-block;
 }
 
 /* 공통점을 찾았으면 간결하게 하기위해  */
-nav li:first-child span:first-child{
+#nav-menu li:first-child span:first-child{
   width: 25px;
   background-position: 0 -285px;
   margin-left: 0;
 }
-nav li span:first-child{
+#nav-menu li span:first-child{
   height: 16px;
   display: inline-block;
   background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
@@ -194,63 +199,63 @@ nav li span:first-child{
   margin-left: 10px;
 }
 
-nav li:nth-child(2) span:first-child{
+#nav-menu li:nth-child(2) span:first-child{
   width: 27px;
   background-position:  -279px -52px;
 }
-nav li:nth-child(3) span:first-child{
+#nav-menu li:nth-child(3) span:first-child{
   width: 40px;
   background-position:  -100px -182px;
 }
-nav li:nth-child(4) span:first-child{
+#nav-menu li:nth-child(4) span:first-child{
   width: 40px;
   background-position:  -101px -156px;
 }
-nav li:nth-child(5) span:first-child{
+#nav-menu li:nth-child(5) span:first-child{
   width: 26px;
   background-position:  -279px -156px;
 }
-nav li:nth-child(6) span:first-child{
+#nav-menu li:nth-child(6) span:first-child{
   width: 25px;
   background-position:  -70px -285px;
 }
-nav li:nth-child(7) span:first-child { 
+#nav-menu li:nth-child(7) span:first-child { 
   width: 35px;
   background-position: -125px -130px;
 }
-nav li:nth-child(8) span:first-child {
+#nav-menu li:nth-child(8) span:first-child {
   width: 26px;
   background-position: -279px -208px;
 }
-nav li:nth-child(9) span:first-child {
+#nav-menu li:nth-child(9) span:first-child {
   width: 26px;
   background-position: -128px -104px;
 }
-nav li:nth-child(10) span:first-child {
+#nav-menu li:nth-child(10) span:first-child {
   width: 26px;
   background-position: -36px -259px;
 }
-nav li:nth-child(11) span:first-child {
+#nav-menu li:nth-child(11) span:first-child {
   width: 39px;
   background-position: -151px -156px;
 }
-nav li:nth-child(12) span:first-child {
+#nav-menu li:nth-child(12) span:first-child {
   width: 26px;
   background-position: -279px -130px;
 }
-nav li:nth-child(13) span:first-child {
+#nav-menu li:nth-child(13) span:first-child {
   width: 26px;
   background-position: -234px -233px;
 }
-nav li:nth-child(14) span:first-child {
+#nav-menu li:nth-child(14) span:first-child {
   width: 26px;
   background-position: -72px -259px;
 }
-nav li:nth-child(15) span:first-child {
+#nav-menu li:nth-child(15) span:first-child {
   width: 13px;
   background-position: -140px -78px;
 }
-nav li:nth-child(16) span:first-child {
+#nav-menu li:nth-child(16) span:first-child {
   width: 26px;
   background-position: -279px 0;
 } 
@@ -270,8 +275,45 @@ nav li.more:first-child span:first-child{
 
 #search-ranking{
   position: absolute;
-  top : 16px;
-  right: 100px;
+  top : 14px;
+  right: 0;
+  width: 198px;
+  height: 20px;
+}
+
+#search-ranking:hover ul{ 
+  display: inline-block;
+}
+
+#search-ranking ul{
+  display: none;
+  list-style: none;
+  padding: 17px;
+  margin: 0;
+  width: 352px;
+  height: 334px;
+  border: 1px solid #aaa;
+  background:#fff;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  z-index: 100;
+}
+
+
+#z-exaple{
+  position: absolute;
+  background: yellow;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+#z-inner{
+  position: absolute;
+  background: red;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
 }
 
 #rank-number{
@@ -279,6 +321,11 @@ nav li.more:first-child span:first-child{
   color: #00ab33;
   font-size: 16px;
 }
+#rank-title{
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+
 main {
   background-color: #f2f4f7;
   /* overflow: auto; */
@@ -295,11 +342,14 @@ main {
 
 #main-centered{
   padding: 8px 10px  ;
-  width: 1100px;
+  width: 1120px;
+  /* width: 1100px; */
 }
 #main-first-block{
   display: inline-block;
   width: 100%;
+  vertical-align: top;
+
 }
 
 #main-ad{
@@ -316,19 +366,59 @@ main {
 #main-login{
   float : left;
   display: inline-block;
-  width: 332px;
+  width: 352px; /*332*/
   height: 120px;
   vertical-align: top;
   background : white;
   margin-bottom: 8px;
 }
 
-#main-second-block .inline-block:first-child{
-  width: 740px;
+#main-login .login-wrapper{
+  display: block;
+  padding: 15px 25px;
 }
 
-#main-second-block .inline-block:last-child{
-  width: 332px;
+#main-login .login-text{
+  color: #888;
+  font-size: 12px;
+  line-height: 14px;
+}
+#main-login .login-wrapper a{
+  display: block;
+}
+#main-login .login-image{
+  margin-top: 12px;
+  background: url(./sp_login.png) 0 -47px no-repeat;
+  display: inline-block;
+  width: 280px;
+  height: 30px;
+  /* margin-left: 10px; */
+  position: relative;
+  /* top: 50%; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#main-login .login-signup{
+  float: right;
+  font-size: 12px;
+  line-height: 38px;
+  color: #666;
+  text-decoration: none;
+  /*밑줄 생성 안됨 그래서 hover 사용 */
+}
+#main-login .login-signup:hover{
+  text-decoration: underline;
+}
+
+
+#main-second-block .float-left:first-child{
+  width: 740px;
+  margin-right: 8px;
+}
+
+#main-second-block .float-left:last-child{
+  width: 352px; /*332*/
   vertical-align: top;
 }
 
@@ -337,7 +427,6 @@ main {
   width: 740px;
   height: 46px;
   background : white;
-  margin-right: 8px;
   margin-bottom: 8px;
 }
 
@@ -346,13 +435,22 @@ main {
   display: inline-block;
 }
 
+/* 자식의 마진을 바깥으로 꺼내기 */
+#main-second-block{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 8px;
+
+}
+
 #main-newstand{
   display: inline-block;
   width: 740px;
   height: 246px;
   background : white;
   margin-right: 8px;
-  margin-bottom: 8px;
+  vertical-align: top;
+  
 }
 
 #main-newstand h3{
@@ -361,6 +459,7 @@ main {
 }
 
 #main-newstand ul{
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -368,7 +467,7 @@ main {
 
 #main-newstand li{
   float: left;
-  width: 123px;
+  width: calc(100% / 6);
   height: 67px;
   border-right: 1px solid #f1f3f6;
   border-bottom: 1px solid #f1f3f6;
@@ -384,21 +483,21 @@ main {
 
 #main-weather{
   display: inline-block;
-  width: 332px;
+  width: 352px; /*332*/
   height: 142px;
   background : white;
   margin-bottom: 8px;
+  vertical-align: top;
 }
 
 
 
 #main-second-ad{
   display: inline-block;
-  width: 332px;
+  width: 352px; /*332*/
   height: 150px;
   background : #555;
-  
-  margin-bottom: 8px;
+  vertical-align: top;  
 }
 
 
@@ -406,7 +505,7 @@ main {
   float: left;
   display: inline-block;
   width: 740px;
-  height: 837px;
+  height: 990px; /* 882px; */
   background : white;
   margin-bottom: 8px;
   margin-right: 8px;
@@ -416,16 +515,24 @@ main {
 #main-shopping{
   float: left;
   display: inline-block;
-  width: 332px;
-  height: 837px;
+  width: 352px; /*332*/
+  height: 990px; /* 882px; */
   background : white;
   margin-bottom: 8px;
+}
+
+#main-shopping iframe{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
 }
 
 #main-third-block, 
 #main-fourth-block {
   display: inline-block;
   width: 100%;
+  vertical-align: top;
 }
 
 #main-event{
@@ -441,7 +548,7 @@ main {
 #main-third-ad{
   float: left;
   display: inline-block;
-  width: 332px;
+  width: 352px; /* 332px */
   height: 130px;
   background : #555;
 }
